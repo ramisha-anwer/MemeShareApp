@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadMeme() {
         ProgressBar progressBar= findViewById(R.id.progressbar);
         progressBar.setVisibility(View.VISIBLE);
-        String url = "https://meme-api.herokuapp.com/gimme";
+        String url = "https://meme-api.herokuapp.com/gimme/wholesomememes";
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
